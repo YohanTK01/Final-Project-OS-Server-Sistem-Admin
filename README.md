@@ -4,8 +4,8 @@
 - Judul : Web Server Build Hero Mobile Legends
 ## Spesifikasi Server
 - Ubuntu Server 24.04.01
-- Ram 8 GB
-- Prosesor 4 Core
+- Ram 4 GB
+- Prosesor 2 Core
 - Storage 50 GB
 ## Deskripsi
 - Saya memiliki ide untuk membuat web site yang nanti akan berisikan tips & trick dalam bermain game Mobile Legends: Bang Bang
