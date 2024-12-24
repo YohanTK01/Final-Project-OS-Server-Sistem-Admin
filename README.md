@@ -3,11 +3,11 @@
 - NIM   : 23.83.0989
 - Judul : Web Server Build Hero Mobile Legends
 ## Spesifikasi Server
-- OS : Linux Ubuntu
-- Ram : 8 GB
-- CPU : 4 Core
-- Storage : 50 GB
-## Menentukan Ide
+- Ubuntu Server 24.04.01
+- Ram 8 GB
+- Prosesor 4 Core
+- Storage 50 GB
+## Deskripsi
 - Saya memiliki ide untuk membuat web site yang nanti akan berisikan tips & trick dalam bermain game Mobile Legends: Bang Bang
 - Fokus saya adalah membuat website yang akan memberikan rekomendasi build hero yang dapat digunakan oleh pemain pemula
 - Untuk membuat websitenya saya akan mengunakan WordPress
@@ -65,12 +65,15 @@
    
 ### 5. Installasi PHPMyAdmin
 #### Install PHPMyAdmin
-      $ sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+      sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+#### Mengaktifkan ekstensi PHP mbstring
+      sudo phpenmod mbstring
    
 ### 6. Installasi Postfix
 #### Install Postfix
       sudo DEBIAN_PRIORITY=low apt install postfix 
     
-### 7. Install Caching
+### 7. Installasi Varnish
       sudo apt install varnish
+      
     
