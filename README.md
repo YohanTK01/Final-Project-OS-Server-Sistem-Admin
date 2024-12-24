@@ -8,30 +8,37 @@
 - Fokus saya adalah membuat website yang akan memberikan rekomendasi build hero yang dapat digunakan oleh pemain pemula
 - Untuk membuat websitenya saya akan mengunakan WordPress
 ## Langkah-langkah Instalasi
-1. Memperbaharui paket
 
-   ```$ sudo apt update && apt upgrade```
+### 1. Memperbaharui paket
+      sudo apt update && apt upgrade
    
-4. Install Apache
+### 2. Install Apache
+      sudo apt install apache2
 
-   ```$ sudo apt install apache2```
+#### Mengaktifkan Firewall
+      sudo ufw enable
+
+#### Menyesuaikan Firewall untuk Apache
+      sudo ufw app list
+      sudo ufw allow 'Apache'
+      sudo ufw status
+
+#### Memeriksa Server Web Anda
+      sudo systemctl status apache2
+      hostname -I
+#### Mengecek Server Web di Browser
+      http://your_server_ip
    
-6. Install MariaDB
-
-   ```$ sudo apt install mariadb-server```
-
-   ```$ sudo mysql_secure_installation```
+### 3. Install MariaDB
+      sudo apt install mariadb-server
+      sudo mysql_secure_installation
    
-8. Install PHPMyAdmin
-
-   ```$ sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl```
+### 5. Install PHPMyAdmin
+      $ sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
    
-10. Install Postfix
-
-    ```$ sudo DEBIAN_PRIORITY=low apt install postfix```
+### 6. Install Postfix
+      sudo DEBIAN_PRIORITY=low apt install postfix 
     
-12. Install Caching
-
-    ```$ sudo apt install varnish```
-
+### 7. Install Caching
+      sudo apt install varnish
     
